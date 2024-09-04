@@ -320,7 +320,7 @@
 }
 
 .link:hover {
-  border-bottom: 1px solid var(--border-bottom, #f1b2ce);
+  border-bottom: 1px solid var(--border-bottom);
 }
 
 .link:focus {
