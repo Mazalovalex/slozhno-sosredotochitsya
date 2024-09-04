@@ -18,8 +18,8 @@
 }
 
 .header {
-  position: relative;
   height: 100vh;
+  position: relative;
   min-height: 668px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
