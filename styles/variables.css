@@ -19,6 +19,9 @@
     --decor-color: #ff0070;
     --section-subtitle: #ff0070;
 
+    --normal-weight: 400;
+    --bold-weight: 700;
+
     --subtitle-color: #000028;
     --background-color-text: #ff0070;
     --main-color-text: #f1b2ce;
@@ -27,6 +30,7 @@
     --border-bottom: #f1b2ce;
     --border-color: rgba(255, 0, 112, 0.4);
     --border-active-color: #ff0070;
+    --font-family: "IBM Plex Mono", monospace;
   }
 }
 
@@ -50,6 +54,9 @@
     --accent-color: #ff8dcb;
     --subtitle-color: #353430;
     --main-color-text: #353430;
+
+    --normal-weight: 400;
+    --bold-weight: 700;
 
     --button-color: #353430;
     --border-bottom: #353430;

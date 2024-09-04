@@ -20,7 +20,9 @@
   --accent-color: #ff8dcb;
   --subtitle-color: #353430;
   --main-color-text: #353430;
-  --font-family: "IBM Plex Mono", monospace;
+	
+	--normal-weight:400;
+	--bold-weight:700;
 
   --button-color: #353430;
   --border-bottom: #353430;
