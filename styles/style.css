@@ -214,7 +214,7 @@
 }
 
 .link:hover {
-  border-bottom: 1px solid var(--border-bottom);
+  border-bottom: 1px solid var(--link-underline);
 }
 
 .link:focus {
