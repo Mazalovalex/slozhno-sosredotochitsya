@@ -26,10 +26,8 @@
   --main-color-text: #f1b2ce;
 
   --button-color: #ff0070;
-  --border-bottom: #f1b2ce;
+  --border-bottom: #ff0070;
   --border-color: rgba(255, 0, 112, 0.4);
   --border-active-color: #ff0070;
   --font-family: "IBM Plex Mono", monospace;
 }
-
-
