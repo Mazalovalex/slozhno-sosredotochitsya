@@ -110,6 +110,7 @@
   cursor: pointer;
   font-size: 18px;
   border: 1px solid transparent;
+  transition: var(--transition-duration);
   background: transparent;
   text-transform: lowercase;
 }

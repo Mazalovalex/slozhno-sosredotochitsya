@@ -17,6 +17,7 @@
   --accent-color: #ff0070;
   --decor-color: #ff0070;
   --section-subtitle: #ff0070;
+  --transition-duration: border 0.5s ease;
 
   --normal-weight: 400;
   --bold-weight: 700;
@@ -27,7 +28,7 @@
 
   --button-color: #ff0070;
   --border-bottom: #ff0070;
-	--link-underline:#F1B2CE;
+  --link-underline: #f1b2ce;
   --border-color: rgba(255, 0, 112, 0.4);
   --border-active-color: #ff0070;
   --font-family: "IBM Plex Mono", monospace;
