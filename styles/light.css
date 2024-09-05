@@ -10,7 +10,9 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --background-image: url(../images/cover-image-light.png);
+  --background-image: url(../images/cover-image-lightf.png);
+  --reserve-color: #ffeef6;
+
   --title-color: #ffc2e6;
   --title-shadow: #ff0070;
   --background-color-text: #ff8dcb;
@@ -20,9 +22,9 @@
   --accent-color: #ff8dcb;
   --subtitle-color: #353430;
   --main-color-text: #353430;
-	
-	--normal-weight:400;
-	--bold-weight:700;
+
+  --normal-weight: 400;
+  --bold-weight: 700;
 
   --button-color: #353430;
   --border-bottom: #353430;

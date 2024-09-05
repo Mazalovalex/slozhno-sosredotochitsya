@@ -3,13 +3,18 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: var(--font-family);
+
   background-image: var(--background-image);
+  background-color: var(--reserve-color);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+
   font-size: 18px;
   font-weight: var(--normal-weight);
 }
+
 /* ----------------------------------Header---------------------------------- */
 
 .header_rec {
@@ -19,10 +24,14 @@
   top: 20px;
   right: 40px;
 }
-@media (375px <= width < 768px) {
-  .header_rec {
-    top: 10px;
-    right: 30px;
+
+.page.theme_dark .header_rec {
+  display: block;
+}
+
+@media (prefers-color-scheme: light) {
+  .page .header_rec {
+    display: none;
   }
 }
 
@@ -53,13 +62,6 @@
   box-shadow: 0px 0px 4px 2px var(--accent-color);
 }
 
-@media (375px <= width < 768px) {
-  .header_rec::after {
-    right: 0px;
-    top: 8px;
-  }
-}
-
 .decorated-zone::before {
   position: absolute;
   content: "";
@@ -69,13 +71,6 @@
   height: 25px;
   right: 20px;
   top: 20px;
-}
-
-@media (375px <= width < 768px) {
-  .decorated-zone::before {
-    right: 10px;
-    top: 10px;
-  }
 }
 
 .decorated-zone::after {
@@ -89,13 +84,6 @@
   left: 20px;
 }
 
-@media (375px <= width < 768px) {
-  .decorated-zone::after {
-    left: 10px;
-    bottom: 10px;
-  }
-}
-
 .header {
   height: 100vh;
   position: relative;
@@ -104,35 +92,8 @@
   grid-template-rows: 1fr min-content 1fr;
 }
 
-@media (375px <= width < 768px) {
-  .header {
-    padding: 0px 10px;
-  }
-}
-
-@media (768px <= width < 1024px) {
-  .header {
-    padding: 0px;
-  }
-}
-
 .header__theme-menu {
   margin-block-start: 20px;
-}
-@media (768px <= width < 1024px) {
-  .header__theme-menu-list {
-    margin-block-start: 171px;
-    justify-self: end;
-    gap: 20px;
-    right: 40px;
-  }
-}
-
-@media (375px <= width < 768px) {
-  .header__theme-menu-list {
-    margin-block-start: 55px;
-    justify-self: end;
-  }
 }
 
 .header__theme-menu-list {
@@ -140,25 +101,6 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
-
-@media (768px <= width < 1024px) {
-  .header__theme-menu-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: end;
-    padding-right: 20px;
-  }
-}
-@media (375px <= width < 768px) {
-  .header__theme-menu-list {
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
-    align-items: end;
-    padding-right: 0px;
-  }
 }
 
 .header__theme-menu-button {
@@ -197,12 +139,6 @@
   text-shadow: 4px 4px 0px var(--title-shadow);
 }
 
-@media (375px <= width < 768px) {
-  .header_title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-}
-
 .text-decor {
   color: var(--subtitle-color);
   background-color: var(--background-color-text);
@@ -220,32 +156,10 @@
   max-width: 491px;
 }
 
-@media (768px <= width < 1024px) {
-  .header_text {
-    max-width: 364px;
-    margin-inline-end: 20px;
-    margin-block-start: 163px;
-  }
-}
-
-@media (375px <= width < 768px) {
-  .header_text {
-    max-width: 100%;
-    margin-inline-end: 0px;
-    margin-block-start: 55px;
-  }
-}
-
 /* --------------------------------main----------------------------------  */
 
 .main {
   padding: 0px 20px;
-}
-
-@media (375px <= width < 768px) {
-  .main {
-    padding: 0px 10px;
-  }
 }
 
 .section__content {
@@ -254,20 +168,8 @@
   gap: 10px;
 }
 
-@media (768px <= width < 1024px) {
-  .section__content {
-    gap: 20px;
-  }
-}
-
 .focus {
   margin-block-start: 60px;
-}
-
-@media (375px <= width < 768px) {
-  .focus {
-    margin-block-start: 40px;
-  }
 }
 
 .title {
@@ -278,18 +180,10 @@
   color: var(--section-subtitle);
 }
 
-.content__focus {
+.section__article_list {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-@media (375px <= width < 768px) {
-  .section__content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
 }
 
 .article {
@@ -333,15 +227,9 @@
 
 .reduces__concentration {
   margin-block-start: 80px;
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
-}
-
-@media (375px <= width < 768px) {
-  .reduces__concentration {
-    margin-block-start: 50px;
-  }
 }
 
 .content__reduces_concentration {
@@ -350,46 +238,15 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-@media (768px <= width < 1024px) {
-  .content__reduces_concentration {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (375px <= width < 768px) {
-  .content__reduces_concentration {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.content__reduces__concentration {
+.content__title_concentration {
   max-width: 315px;
-}
-
-@media (768px <= width < 1024px) {
-  .content__reduces__concentration {
-    max-width: 146px;
-  }
 }
 
 .recommendations {
   margin-block-start: 80px;
 }
-@media (375px <= width < 768px) {
-  .recommendations {
-    margin-block-start: 50px;
-  }
-}
 
 .recommendations_content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.recommendations_list {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -407,12 +264,6 @@
   margin-block-start: 80px;
 }
 
-@media (375px <= width < 768px) {
-  .picture {
-    margin-block-start: 50px;
-  }
-}
-
 .dark__title {
   color: var(--subtitle-color);
 }
@@ -420,20 +271,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
 .section__picture_content {
   margin-block-start: 20px;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-}
-@media (375px <= width < 768px) {
-  .section__picture_content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-block-start: 10px;
-  }
 }
 
 .section__picture_content img:nth-of-type(1) {
@@ -472,13 +316,146 @@
   text-shadow: 4px 4px 0px var(--title-shadow);
 }
 
+/* Дополнительные правила для планшетов */
+/* ---------------------------------- Header (768 - 1024) --------------------------- */
+
 @media (768px <= width < 1024px) {
+  .header {
+    padding: 0px;
+  }
+
+  .header__theme-menu-list {
+    margin-block-start: 171px;
+    justify-self: end;
+    gap: 20px;
+    right: 40px;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: end;
+    padding-right: 20px;
+  }
+
+  .header_text {
+    max-width: 364px;
+    margin-inline-end: 20px;
+    margin-block-start: 163px;
+  }
+  /* ---------------------------------- main (768 - 1024) --------------------------- */
+
+  .section__content {
+    gap: 20px;
+  }
+
+  .content__reduces_concentration {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content__title_concentration {
+    max-width: 146px;
+  }
+  /* -------------------------------- footer (768 - 1024) --------------------------- */
+
   .footer_title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
-@media (375px <= width < 768px) {
+/* Основные стили для мобильных устройств */
+/* ---------------------------------- Header ( min - 768) --------------------------- */
+
+@media (width < 768px) {
+  .header_rec {
+    top: 10px;
+    right: 30px;
+  }
+
+  .header_rec::after {
+    right: 0px;
+    top: 8px;
+  }
+
+  .decorated-zone::before {
+    right: 10px;
+    top: 10px;
+  }
+
+  .decorated-zone::after {
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .header {
+    padding: 0px 10px;
+  }
+
+  .header__theme-menu-list {
+    margin-block-start: 55px;
+    justify-self: end;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    align-items: end;
+    padding-right: 0px;
+  }
+
+  .header_title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .header_text {
+    max-width: 100%;
+    margin-inline-end: 0px;
+    margin-block-start: 55px;
+  }
+  /* ---------------------------------- main (375 - 768) --------------------------- */
+
+  .main {
+    padding: 0px 10px;
+  }
+
+  .focus {
+    margin-block-start: 40px;
+  }
+
+  .section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .reduces__concentration {
+    margin-block-start: 50px;
+  }
+
+  .content__reduces_concentration {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recommendations {
+    margin-block-start: 50px;
+  }
+
+  .picture {
+    margin-block-start: 50px;
+  }
+
+  .section__picture_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-block-start: 10px;
+  }
+
+  /* -------------------------------- footer (375 - 768) --------------------------- */
   .footer_title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
