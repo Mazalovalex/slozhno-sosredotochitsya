@@ -326,22 +326,14 @@
 
   .header__theme-menu-list {
     margin-block-start: 171px;
-    justify-self: end;
-    gap: 20px;
-    right: 40px;
-  }
-
-  .header__theme-menu-list {
-    display: flex;
     flex-direction: column;
-    gap: 12px;
     align-items: end;
+    gap: 12px;
     padding-right: 20px;
   }
 
   .header_text {
     max-width: 364px;
-    margin-inline-end: 20px;
     margin-block-start: 163px;
   }
   /* ---------------------------------- main (768 - 1024) --------------------------- */
@@ -395,15 +387,9 @@
 
   .header__theme-menu-list {
     margin-block-start: 55px;
-    justify-self: end;
-  }
-
-  .header__theme-menu-list {
-    display: flex;
     flex-direction: column;
     gap: 11px;
     align-items: end;
-    padding-right: 0px;
   }
 
   .header_title {
