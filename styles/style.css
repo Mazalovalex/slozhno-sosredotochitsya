@@ -29,12 +29,6 @@
   display: block;
 }
 
-@media (prefers-color-scheme: light) {
-  .page .header_rec {
-    display: none;
-  }
-}
-
 .header_rec::before {
   position: absolute;
   right: 8px;
