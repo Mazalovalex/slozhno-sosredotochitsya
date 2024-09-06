@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --background-image: url(../images/cover-image-lightf.png);
+  --background-image: url(../images/cover-image-light.png);
   --reserve-color: #ffeef6;
 
   --title-color: #ffc2e6;
@@ -37,7 +37,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-image: url(../images/cover-image-lightf.png);
+    --background-image: url(../images/cover-image-light.png);
     --reserve-color: #ffeef6;
 
     --title-color: #ffc2e6;
@@ -59,13 +59,14 @@
     --link-underline: #353430;
     --border-color: rgba(53, 52, 48, 0.4);
     --border-active-color: #353430;
-    --font-family: "IBM Plex Mono", monospace;
+		--font-family: "IBM Plex Mono", monospace;
   }
 }
 
 .page.theme_light .header_rec {
   display: none;
 }
+
 
 @media (prefers-color-scheme: light) {
   .page .header_rec {
