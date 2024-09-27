@@ -1,6 +1,6 @@
 # Яндекс Практикум, проектная работа "Сложно сосредоточиться"
 
-- Репозиторий проекта: https://github.com/Mazalovalex/slozhno-sosredotochitsya.git
+- Репозиторий проекта:
 
 ### Описание
 
@@ -8,6 +8,14 @@
 
 В процессе работы применялся подход Desktop first. Кроме того, была проведена адаптация сайта для корректного отображения на различных размерах экрана (брейк-поинтах).
 
+## Репозиторий проекта на GitHub
+
+[Открыть](https://github.com/Mazalovalex/slozhno-sosredotochitsya.git)
+
+## Опубликованный проект
+
+**Посмотреть проект**: [Открыть](https://mazalovalex.github.io/slozhno-sosredotochitsya/)
+
 ## Автор
 
-- Github - [Aleksey Mazalov](https://github.com/Mazalovalex)
+[Aleksey Mazalov](https://github.com/Mazalovalex)
